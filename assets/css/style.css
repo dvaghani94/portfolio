@@ -21,8 +21,10 @@ body {
     display: inline block;
     font-family: fantasy;
     font-size: 62px;
-    color:darkcyan;
-    text-shadow: 4px 4px #ccffff;
+    color: #043e55;
+    text-shadow: 4px 4px #06688f;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 .header ul li {
@@ -34,7 +36,7 @@ body {
 }
 
 a {
-    color: purple;
+    color: #036b61;
     text-decoration: none;
     padding-right: 40px;
 }
