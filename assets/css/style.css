@@ -8,10 +8,34 @@ body {
     background-color: rgb(255, 230, 255)
 }
 
-.header { 
-    padding: 40px;
-    font-family:"Cambria", "Cochin", "Georgia", "Times", "Times New Roman", serif;
-    background-color:aliceblue;
-    color:aqua;
+.header {
+    background-image: url("../images/header-image.jpg");
+    min-height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1 {
+    display: inline block;
+    font-family: fantasy;
+    font-size: 62px;
+    color:darkcyan;
+    text-shadow: 4px 4px #ccffff;
+}
+
+.header ul li {
+    display: inline-block;
+    font-family:cursive;
+    font-size: 20x;
+    position: absolute;
+    right: 0px;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+    padding-right: 40px;
 }
 
