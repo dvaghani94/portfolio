@@ -13,6 +13,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -37,13 +39,15 @@ body {
     font-size: 20x;
     position: absolute;
     right: 0px;
+    background-color:rgb(28, 185, 247);
+    width: 2000px;
+    text-align: right;
 }
 
 div a {
     color: var(--dark-blue);
     padding: 14px 20px;
     text-decoration: none;
-    text-align: right;
 }
 
 div a:hover {
@@ -51,7 +55,14 @@ div a:hover {
     color:darkblue;
 }
 
-.about-me, .projects, .contact-me {
+.vl {
+    border-left: 6px solid blue;
+    height: 250px;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.about-me, .projects, .contact-me, .resume {
     margin-top: 50px;
     margin-left: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -62,47 +73,38 @@ div a:hover {
 p { 
     margin-left: 300px;
     font-size: 15px;
-    width: 500px;
-    
+    width: 1200px;
 }
 
 .portfolio {
     flex: 1;
-    background-color: (var--white);
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.box {
+.projects img {
     border-style: solid;
-    border-width: 10px;
-    border-radius: var(--border-radius);
-    padding: 10px;
+    border-image-width: 1px;
+    border-radius: 0px;
     flex:  0 0 300px;
-    box-shadow: 10px 10 px 5px #ccf5ff;
     margin: 20px;
+    height: 250px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px) {
-     {
-        flex: 0 0 50%;
-        max-width: 50%;
-    
-        {
-            flex-grow: 1;
-        }
+.projects img:hover {
+    background-color: cyan;
+    color:darkblue;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+        flex-direction: column;
     }
-
-
-@media screen and (min-width: 992px) {
-     {
-        width: 75%
-     }
-
-     {
-         flex: 0 0 33.333%;
-         max-width: 33.333%;
-     }
-    }
+}
