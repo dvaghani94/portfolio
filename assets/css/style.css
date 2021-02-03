@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: rgb(255, 230, 255)
+    background-color: #ccf5ff;
 }
 
 .header {
     background-image: url("../images/header-image.jpg");
-    min-height: 150px;
+    min-height: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,6 +27,12 @@ body {
     padding-top: 20px;
 }
 
+.header img {
+    height: 320px;
+    width: 250px;
+    padding: 40px;
+}
+
 .header ul li {
     display: inline-block;
     font-family:cursive;
@@ -35,9 +41,56 @@ body {
     right: 0px;
 }
 
+.header ul li:hover {
+    background-color: cyan;
+    color:darkblue;
+}
+
 a {
-    color: #036b61;
+    color: #012b27;
     text-decoration: none;
     padding-right: 40px;
 }
 
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.about-me, .projects, .contact-me {
+    margin-bottom: 50px;
+    width: 5px;
+    height: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background-color:rgb(12, 65, 145);
+    color:rgb(7, 171, 247);
+}
+
+.meta-data {
+    font-size: 10px;
+    margin-left: 30px;
+    color: #14bee9;
+}
+@media screen and (min-width: 768px) {
+     {
+        flex: 0 0 50%;
+        max-width: 50%;
+    
+        {
+            flex-grow: 1;
+        }
+    }
+
+
+@media screen and (min-width: 992px) {
+     {
+        width: 75%
+     }
+
+     {
+         flex: 0 0 33.333%;
+         max-width: 33.333%;
+     }
+    }
