@@ -1,11 +1,10 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
 }
 
 body {
-    background-color: #ccf5ff;
+    background-color: #b0ebfa;
 }
 
 .header {
@@ -18,10 +17,11 @@ body {
 }
 
 .header h1 {
+    margin-top: 100px;
     display: inline block;
     font-family: fantasy;
     font-size: 62px;
-    color: #043e55;
+    color: #ccf5ff;
     text-shadow: 4px 4px #06688f;
     padding-left: 40px;
     padding-top: 20px;
@@ -30,17 +30,19 @@ body {
 .header img {
     height: 300px;
     width: 250px;
-    padding: 40px;
+    padding: 60px;
 }
 
 .header ul li {
     display: inline-block;
     font-family:cursive;
-    font-size: 20x;
+    font-size: 50x;
+    font-weight: bold;
     position: absolute;
     right: 0px;
-    background-color:rgb(28, 185, 247);
-    width: 2000px;
+    background-color: #0aa1c7;
+    height: 35px;
+    width: auto;
     text-align: right;
 }
 
@@ -57,23 +59,26 @@ div a:hover {
 
 .vl {
     border-left: 6px solid blue;
-    height: 250px;
+    height: 500px;
     margin-left: 200px;
     padding: 30px;
 }
 
 .about-me, .projects, .contact-me, .resume {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color:rgb(7, 171, 247);
+    font-size: 35px;
+    color:rgb(2, 56, 92);
 }
 
-p { 
+p {
+    color:rgb(28, 185, 247);
     margin-left: 300px;
-    font-size: 15px;
-    width: 1200px;
+    font-size: 20px;
+    width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio {
@@ -85,19 +90,39 @@ p {
 }
 
 .projects img {
+    float: right;
     border-style: solid;
     border-image-width: 1px;
     border-radius: 0px;
-    flex:  0 0 300px;
-    margin: 20px;
-    height: 250px;
-    width: 500px;
+    margin-right: 20px;
+    height: 150x;
+    width: 300px;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .projects img:hover {
+    background-color: cyan;
+    color:darkblue;
+}
+
+.sl {
+    border-left: 6px solid blue;
+    height: 150px;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.contact-me ul li {
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5x;
+    padding: 30px;
+    color: var(--dark-blue);
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.contact-me li:hover {
     background-color: cyan;
     color:darkblue;
 }
